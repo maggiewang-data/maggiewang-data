@@ -2,12 +2,12 @@
 
 **Data Analyst · Product & Causal Data Science · New York City** 🗽
 
-🎓 B.A. Economics, **New York University** (minors in Data Science & French) · 3.8 GPA, Dean's List every semester
-📊 I turn messy data into decisions with experimentation, causal inference and machine learning
-🔬 Research Assistant in economics at **Barnard College**: prediction-market calibration and network analysis of trading data
-📚 Research Assistant at **NYU**: NLP topic modeling on 1M+ news articles; quantitative economic history
-🌱 Currently sharpening: SQL for analytics, experimentation at scale, and deploying ML models
-📫 Reach me at **magwang0117@gmail.com**
+- 🎓 B.A. Economics, **New York University** (minors in Data Science & French) · 3.8 GPA, Dean's List every semester
+- 📊 I turn messy data into decisions with experimentation, causal inference and machine learning
+- 🔬 Research Assistant in economics at **Barnard College**: prediction-market calibration and network analysis of trading data
+- 📚 Research Assistant at **NYU**: NLP topic modeling on 1M+ news articles; quantitative economic history
+- 🌱 Currently sharpening: SQL for analytics, experimentation at scale, and deploying ML models
+- 📫 Reach me at **magwang0117@gmail.com**
 
 ---
 
