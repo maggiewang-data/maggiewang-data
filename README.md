@@ -14,6 +14,9 @@ At **Barnard College**, I first worked on prediction-market data: mapping networ
 
 ## Projects
 
+**[Where an e-commerce marketplace loses its customers](https://github.com/maggiewang-data/sql-product-analytics)**
+Real orders from about 100,000 Brazilian marketplace customers, analyzed entirely in SQL. The first finding came before any metric: the table has one customer ID per *order*, not per person, so counting the obvious column makes every returning buyer look new. Counted correctly, only about 2% of customers genuinely come back. And the clearest controllable driver of bad reviews is a late delivery, a gap that holds up inside every state, not just in the remote ones.
+
 **[Did "active choice" raise organ donor sign-ups?](https://github.com/maggiewang-data/did-causal-inference)**
 California changed one rule and 26 states didn't, which makes a natural comparison. The standard regression called the drop significant. But with only one state actually treated, that standard error assumes far more independent evidence than exists. When I compared California against every other state's placebo result instead, its change looked ordinary. I report that version, because it's the one that survives the design.
 
@@ -21,7 +24,7 @@ California changed one rule and 26 states didn't, which makes a natural comparis
 This rebuilds the InnovaAI kind of experiment in public, on simulated data, so every decision is visible. The order is the point: decide how large an effect is worth detecting *before* launching, confirm the randomization held *before* reading any result, and only then ask whether the gain came at a cost elsewhere. One guardrail came back too noisy to clear or condemn, so the recommendation is to ship and monitor it, not to pretend it passed.
 
 **[From churn score to retention decision](https://github.com/maggiewang-data/churn-ml-pipeline)**
-A churn probability only matters once someone decides what to do with it. A missed churner costs months of revenue and an unnecessary offer costs a discount, so the right cutoff isn't 0.5. I set it where expected profit peaks. Then I packaged the model as a service with tests, because a model nobody can call doesn't change any decisions.
+A churn probability only matters once someone decides what to do with it. A missed churner costs months of revenue and an unnecessary offer costs a discount, so the right cutoff isn't 0.5. I set it where expected profit peaks. Then I packaged the model as a service with tests, because a model nobody can call doesn't change any decisions. After launch, a monitor watches each month's customers. In the month a price rise made the model underestimate churn, ranking accuracy actually went *up*, so only the calibration check caught that the probabilities had fallen behind reality.
 
 ## Contact
 
