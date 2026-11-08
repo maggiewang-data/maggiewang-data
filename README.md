@@ -3,9 +3,8 @@
 I'm a data analyst in New York with an economics degree from NYU, and I can't shake one habit: before I trust a number, I want to know where it came from. So most of my work comes back to the same question: **did this change actually cause the result, or did it just happen at the same time?**
 
 - NYU '26, B.A. Economics, minors in Data Science and French
-- Research assistant at **Barnard** (prediction markets and wash-trading networks) and at **NYU** (quantitative economic history)
-- I think in Mandarin, work in English, and read in French
-- Off the clock: playing flute, and catching cheap tickets to NYCB and the Met Opera
+- Research assistant at **Barnard College**, building interactive economics teaching modules in R Shiny, and at **NYU** (quantitative economic history)
+- Languages: English and Mandarin (fluent), French (working)
 - magwang0117@gmail.com · [LinkedIn](https://www.linkedin.com/in/maggiewang17)
 
 ---
