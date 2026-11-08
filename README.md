@@ -1,37 +1,28 @@
-# Hi, I'm Maggie
+# Maggie Wang
 
-I'm a data analyst in New York with an economics degree from NYU, and I can't shake one habit: before I trust a number, I want to know where it came from. So most of my work comes back to the same question: **did this change actually cause the result, or did it just happen at the same time?**
+I studied economics at NYU, and the most useful thing it taught me was suspicion. When two things move together, the interesting question is usually not *how strongly* but *why*, and whether the answer would hold if someone actually intervened. Most of my work as a data analyst comes back to that question.
 
-- NYU '26, B.A. Economics, minors in Data Science and French
-- Research assistant at **Barnard College**, building interactive economics teaching modules in R Shiny, and at **NYU** (quantitative economic history)
-- Languages: English and Mandarin (fluent), French (working)
-- magwang0117@gmail.com · [LinkedIn](https://www.linkedin.com/in/maggiewang17)
+## What I've worked on
 
----
+At **InnovaAI**, I worked on user retention. A churn model could rank users by how likely they were to leave, but it couldn't say what would make them stay, and a prediction isn't a lever. So the onboarding question became an experiment instead of a correlation: we changed the flow for a randomized group and measured the difference. It lifted onboarding by 1.85 percentage points, and the effect was large enough relative to its noise (p = 0.004) that the team could act on it rather than argue about it.
 
-## Things I've built
+At **DoOne Technologies**, the problem came earlier in the chain. Analysis built on a pipeline that was only right 60% of the time was mostly analysis of the pipeline's mistakes. Fixing the data first brought accuracy to 90%, and it removed half the manual cleanup people had been doing every week to work around it.
+
+At **NYU Economics**, I built the data behind a topic-modeling study of news coverage. The raw corpus was skewed 9:1 toward one group of sources, which meant any "topic" the model found would mostly describe those outlets, not the news. Rebalancing to 6:4 before modeling mattered more than any choice of model afterwards.
+
+At **Barnard College**, I first worked on prediction-market data: mapping networks of trades that inflate volume without changing who holds what, and checking whether market prices behave like honest probabilities. Now I build interactive economics teaching modules in R Shiny. Turning a concept into something a student can push on and watch respond is a good test of whether I understand it myself.
+
+## Projects
+
+**[Did "active choice" raise organ donor sign-ups?](https://github.com/maggiewang-data/did-causal-inference)**
+California changed one rule and 26 states didn't, which makes a natural comparison. The standard regression called the drop significant. But with only one state actually treated, that standard error assumes far more independent evidence than exists. When I compared California against every other state's placebo result instead, its change looked ordinary. I report that version, because it's the one that survives the design.
 
 **[Onboarding A/B test, start to finish](https://github.com/maggiewang-data/product-ds-experimentation)**
-I've run an onboarding experiment for real at InnovaAI. This is the full workflow, done in public on simulated data: sizing the test before launch, checking the randomization before reading any result, CUPED, guardrails, and a one-paragraph memo a PM could act on.
+This rebuilds the InnovaAI kind of experiment in public, on simulated data, so every decision is visible. The order is the point: decide how large an effect is worth detecting *before* launching, confirm the randomization held *before* reading any result, and only then ask whether the gain came at a cost elsewhere. One guardrail came back too noisy to clear or condemn, so the recommendation is to ship and monitor it, not to pretend it passed.
 
-**[Churn model → working API](https://github.com/maggiewang-data/churn-ml-pipeline)**
-A churn score is only useful if someone acts on it. So instead of stopping at AUC, I chose *who gets a retention offer* by expected dollars, not a default 0.5 cutoff, and shipped the model as a tested FastAPI service in Docker.
+**[From churn score to retention decision](https://github.com/maggiewang-data/churn-ml-pipeline)**
+A churn probability only matters once someone decides what to do with it. A missed churner costs months of revenue and an unnecessary offer costs a discount, so the right cutoff isn't 0.5. I set it where expected profit peaks. Then I packaged the model as a service with tests, because a model nobody can call doesn't change any decisions.
 
-**[One state changed a rule. Did it work?](https://github.com/maggiewang-data/did-causal-inference)**
-California made drivers actively choose whether to become organ donors. I used difference-in-differences against 26 other states. The regression says "significant." Randomization inference, which is the right tool when only one state is treated, says p = 0.19. I report the second one.
+## Contact
 
-## Before this
-
-- **InnovaAI Tech:** retention analysis on 55K users. Built 4 user segments, a churn model, and an onboarding A/B test that lifted completion **+1.85 pp (p = 0.004)**
-- **DoOne Technologies:** fixed a data pipeline from **60% → 90%** accuracy and cut manual processing in half across 5,000+ weekly records
-- **NYU Economics:** topic modeling on **1M+ news articles**, after rebalancing a source mix that was skewed 9:1
-
-## How I work
-
-- I check whether the randomization worked *before* I look at the lift.
-- I'd rather report an honest p = 0.19 than a flattering p = 0.001.
-- I write the decision, not just the notebook.
-
-**Tools:** Python (pandas, scikit-learn, statsmodels, XGBoost) · SQL · R · FastAPI · Docker · Git
-
-*Looking for data analyst, product analyst and data science roles: New York, remote, or anywhere worth moving for.*
+magwang0117@gmail.com · [LinkedIn](https://www.linkedin.com/in/maggiewang17) · New York, open to remote or relocation
