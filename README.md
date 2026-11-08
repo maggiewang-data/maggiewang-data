@@ -1,45 +1,38 @@
-# Hi, I'm Maggie Wang 👋
+# Hi, I'm Maggie 👋
 
-**Data Analyst · Product & Causal Data Science · New York City** 🗽
+I'm a data analyst in New York with an economics degree from NYU, and I can't shake one habit: before I trust a number, I want to know where it came from. So most of my work comes back to the same question: **did this change actually cause the result, or did it just happen at the same time?**
 
-- 🎓 B.A. Economics, **New York University** (minors in Data Science & French) · 3.8 GPA, Dean's List every semester
-- 📊 I turn messy data into decisions with experimentation, causal inference and machine learning
-- 🔬 Research Assistant in economics at **Barnard College**: prediction-market calibration and network analysis of trading data
-- 📚 Research Assistant at **NYU**: NLP topic modeling on 1M+ news articles; quantitative economic history
-- 🌱 Currently sharpening: SQL for analytics, experimentation at scale, and deploying ML models
-- 📫 Reach me at **magwang0117@gmail.com**
-
----
-
-## 🚀 Featured projects
-
-| Project | Track | What it shows |
-|---|---|---|
-| 🧪 [**Onboarding A/B Test, End to End**](https://github.com/maggiewang-data/product-ds-experimentation) | Product DS | Metric design, power analysis, SRM checks, CUPED, guardrails, segment analysis with multiple-testing correction, ship/no-ship memo |
-| 🤖 [**Churn Prediction → Production API**](https://github.com/maggiewang-data/churn-ml-pipeline) | ML / Applied DS | XGBoost pipeline, calibration, **profit-based decision threshold**, FastAPI service, Docker, unit tests, CI |
-| 📈 [**Difference-in-Differences: Organ Donor Policy**](https://github.com/maggiewang-data/did-causal-inference) | Causal Inference | 2×2 and two-way FE DiD, event study, parallel-trends tests, **randomization inference** with a single treated unit |
-
-## 💼 Experience highlights
-
-- **Retention analytics (InnovaAI Tech):** churn and retention analysis on 55K users and 565K+ weekly events. K-Means segmentation (4 segments), churn model (AUC ≈ 0.73 with time-series CV), and an A/B test showing a **+1.85 pp onboarding lift (p = 0.004)**
-- **Data engineering (DoOne Technologies):** raised data pipeline accuracy from **60% to 90%** and cut manual processing time by **50%** across 5,000+ weekly records (Python, SQL)
-- **NLP research (NYU Economics):** ETL pipeline and topic modeling on **1M+ articles**; corrected a 9:1 source imbalance to 6:4
-
-## 🛠️ Toolkit
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-337AB7)
-![statsmodels](https://img.shields.io/badge/statsmodels-4051B5)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-
-**Methods:** A/B testing · CUPED · power analysis · difference-in-differences · event studies · regression · Random Forest · XGBoost · K-Means · SARIMA forecasting · NLP / topic modeling · data visualization
+- 🎓 NYU '26, B.A. Economics, minors in Data Science and French
+- 🔬 Research assistant at **Barnard** (prediction markets and wash-trading networks) and at **NYU** (quantitative economic history)
+- 🗣️ I think in Mandarin, work in English, and read in French
+- 🎶 Off the clock: playing flute, and catching cheap tickets to NYCB and the Met Opera
+- 📫 magwang0117@gmail.com · [LinkedIn](https://www.linkedin.com/in/maggiewang17)
 
 ---
 
-💬 *Open to Data Analyst, Product Analyst and Data Science roles in NYC, remote, or open to relocation.*
+## 🧪 Things I've built
+
+**[Onboarding A/B test, start to finish](https://github.com/maggiewang-data/product-ds-experimentation)**
+I've run an onboarding experiment for real at InnovaAI. This is the full workflow, done in public on simulated data: sizing the test before launch, checking the randomization before reading any result, CUPED, guardrails, and a one-paragraph memo a PM could act on.
+
+**[Churn model → working API](https://github.com/maggiewang-data/churn-ml-pipeline)**
+A churn score is only useful if someone acts on it. So instead of stopping at AUC, I chose *who gets a retention offer* by expected dollars, not a default 0.5 cutoff, and shipped the model as a tested FastAPI service in Docker.
+
+**[One state changed a rule. Did it work?](https://github.com/maggiewang-data/did-causal-inference)**
+California made drivers actively choose whether to become organ donors. I used difference-in-differences against 26 other states. The regression says "significant." Randomization inference, which is the right tool when only one state is treated, says p = 0.19. I report the second one.
+
+## 💼 Before this
+
+- **InnovaAI Tech:** retention analysis on 55K users. Built 4 user segments, a churn model, and an onboarding A/B test that lifted completion **+1.85 pp (p = 0.004)**
+- **DoOne Technologies:** fixed a data pipeline from **60% → 90%** accuracy and cut manual processing in half across 5,000+ weekly records
+- **NYU Economics:** topic modeling on **1M+ news articles**, after rebalancing a source mix that was skewed 9:1
+
+## 📐 How I work
+
+- I check whether the randomization worked *before* I look at the lift.
+- I'd rather report an honest p = 0.19 than a flattering p = 0.001.
+- I write the decision, not just the notebook.
+
+**Tools:** Python (pandas, scikit-learn, statsmodels, XGBoost) · SQL · R · FastAPI · Docker · Git
+
+*Looking for data analyst, product analyst and data science roles: New York, remote, or anywhere worth moving for.*
